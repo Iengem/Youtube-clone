@@ -456,3 +456,46 @@ section{
     border-radius: 10px;
     padding: 0px 30px;
 }
+@media only screen and (max-width:1300px){
+    .sidebarcont{
+        display: none;
+    }
+    .minisidebar{
+        display: flex;
+    }
+    .content{
+        grid-template-columns: 85px 1fr;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:768px){
+    .content{
+        grid-template-columns: auto;
+    }
+    .searchbar{
+        border: none;
+    }
+    .searchbar .search{
+        background: none;
+        border: none;
+    }
+    .videocard img{
+        border-radius: 10px;
+        height: 80%;
+    }
+    .info img{
+        border-radius: 50%;
+    }
+    .searchbar input{
+        display: none;
+    }
+    .minisidebar{
+        display: none;
+    }
+    .content{
+        width: fit-content;
+    }
+    .topcont{
+        display: none;
+    }
+}
