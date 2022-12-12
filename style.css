@@ -5,18 +5,21 @@
     box-sizing: border-box;
     font-family:'Roboto', sans-serif;
 }
+section{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 .dashboard{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr 150px;
     position: sticky;
     top: 0;
-    width: 100vw;
+    max-width: 100vw;
     height: max-content;
     z-index: 1;
     background-color:white;
     padding:10px 25px;
-    padding-right: 40px;
 }
 .icons{
     display: flex;
@@ -49,7 +52,7 @@
     font-size: 20px;
 }
 .searchbar{
-    min-width: 570px;
+    width: 65%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -70,10 +73,9 @@
 }
 .mid{
     display: flex;
-    gap:10px;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    right: 140px;
 }
 .bi-mic-fill{
     font-size: 20px;
@@ -89,7 +91,7 @@
     background-color: rgb(248,248,248);
     border-left: 1px solid rgb(198,198,198);
     border-radius: 0px 40px 40px 0px;
-    width: 11%;
+    width: 80px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -110,11 +112,12 @@
 }
 .searchbar input::placeholder{
     font-size: 16px;
+    font-weight: 100;
 }
 .user{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap:5px;
 }
 .userpic{
     border-radius: 50%;
@@ -130,6 +133,9 @@
     width: 210px;
     border-radius: 10px;
 }
+.selected:nth-child(1){
+    background-color: rgb(240, 240, 240);
+}
 .rect:hover{
     background-color: rgb(240, 240, 240);
 }
@@ -143,7 +149,7 @@
     display: grid;
     max-width: 100vw;
     grid-template-columns: 240px 1fr;
-    max-height: 80vh;
+    max-height: 90vh;
 }
 .sidebarcont{
     max-height: 90vh;
@@ -235,17 +241,22 @@
 .maincont{
     max-height: 90vh;
     overflow-y: auto;
+    width: 100%;
 }
 .menu{
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
+    height: fit-content;
+    overflow-x: scroll;
+    z-index: 10;
     gap: 10px;
     position: sticky;
     top: 0;
     background-color: white;
     padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 10px;
 }
 .menu a{
     text-decoration: none;
@@ -265,13 +276,13 @@
     transition: .5s;
 }
 .topcont{
-    max-width: 1280px;
-    height: 260px;
+    width: 80vw;
+    height: fit-content;
     display: flex;
     padding: 30px;
 }
 .firstcont{
-    width: 470px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -289,17 +300,20 @@
     background-color: rgb(229,229,229);
 }
 .firstcont img{
-    width: 320px;
+    max-width: 320px;
     height: 24px;
 }
 .firstcont h1{
-    font-size:36px;
+    font-size: 36px;
     line-height: 50px;
     font-weight: 700;
 }
 .secondcont{
     display: flex;
-    gap: 250px;
+}
+.secondcont img{
+    width: 100%;
+    height:100%;
 }
 .secondcont i{
     font-size: 23px;
@@ -319,12 +333,11 @@
 }
 .videos{
     display: grid;
-    justify-content: center;
-    width: 1110px;
-    grid-template-columns: repeat(4, 1fr);
-    height: fit-content;
-    gap:20px;
-    padding: 0px 25px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    row-gap: 40px;
+    padding: 0px 20px;
+    padding-bottom: 20px;
 }
 .videos:nth-child(2){
     border-bottom: 5px solid rgb(229,229,229);
@@ -333,14 +346,17 @@
     border-top: 5px solid rgb(229,229,229);
     padding-top: 30px;
 }
-.videos img{
+.videocard img{
     border-radius: 20px;
-    max-width: 253.48px;
-    max-height: 142.58px;
+    width: 100%;
+    height: 162.58px;
+}
+.info img{
+    border-radius: 50%;
 }
 .videocard{
-    height: 250px;
-    width: 250px;
+    margin: 0px auto;
+    width: 100%;
 }
 .info{
     display: flex;
@@ -396,4 +412,47 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+}
+.shorts{
+    overflow-x: scroll;
+}
+.fixed{
+    position: sticky;
+    left:0;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+.shorts::-webkit-scrollbar-thumb{
+    background: none;
+}
+.menu::-webkit-scrollbar-thumb{
+    background: none;
+}
+.minisidebar{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 90vh;
+}
+.rect2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+    width: 64px;
+}
+.rect2 p{
+    font-size: 10px;
+    line-height: 14px;
+    color: rgb(15,15,15);
+    font-weight: 400;
+}
+.rect2:hover{
+    background-color: rgb(229,229,229);
+    border-radius: 10px;
+    padding: 0px 30px;
 }
