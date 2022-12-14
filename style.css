@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family:'Roboto', sans-serif;
 }
+body{
+    position: relative;
+}
 section{
     width: 100vw;
     height: 100vh;
@@ -648,7 +651,6 @@ iframe{
     left: 0;
     top: 0;
     bottom:0;
-    max-height: 90vh;
     background-color: white;
     display: flex;
     flex-direction: column;
