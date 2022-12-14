@@ -22,6 +22,7 @@ function sidebar(){
     if(sidebarpos.style.width != '240px'){
         sidebarpos.style.width = '240px'
         document.querySelector('.dim').style.display = 'block'
+        document.querySelector('.section').style.overflowY = 'hidden'
     }
     else{
         sidebarpos.style.width = '0'
