@@ -669,9 +669,6 @@ iframe{
     .list-one{
         display: none;
     }
-    .sidebarcont1{
-        height: 100vh !important;
-    }
     .sidebarcont{
         display: none !important;
     }
