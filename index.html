@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Youtube</title>
 </head>
 <body>
+    <div class="dim"></div>
     <section>
         <div class="dashboard">
             <div class="icons">
-                <i class="bi bi-list hover"></i>
+                <span class="material-symbols-outlined bi-list1 hover list-one">menu</span>
+                <span class="material-symbols-outlined bi-list1 hover list-two" onclick="sidebar()">menu</span>
                 <div class="youtubeico">
                     <img src="images/youtube logo.PNG" alt="">
                     <p>NG</p>
@@ -36,13 +38,173 @@
             </div>
         </div>
         <div class="content">
+            <div class="sidebarcont1">
+                <div class="sidebar">
+                    <div class="icons">
+                        <span class="material-symbols-outlined bi-list1 hover list-one">menu</span>
+                        <span class="material-symbols-outlined bi-list1 hover list-two" onclick="sidebar()">menu</span>
+                        <div class="youtubeico">
+                            <img src="images/youtube logo.PNG" alt="">
+                            <p>NG</p>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <a href="index.html"><div class="rect selected">
+                            <i class="bi bi-house-door-fill rectpic"></i>
+                            <p>Home</p>
+                        </div></a>
+                        <div class="rect">
+                            <img class= 'short'src="images/youtube-shorts-logo-15252.svg"/>
+                            <p>Shorts</p>
+                        </div>
+                        <div class="rect">
+                            <i class="bi bi-collection-play rectpic"></i>
+                            <p>Subscriptions</p>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="rect">
+                            <img src="images/youtube-videos-7639.svg" class='short'alt="vid">
+                            <p>Library</p>
+                        </div>
+                        <div class="rect">
+                            <img class='short'src="images/history-7611.svg" alt="short">
+                            <p>History</p>
+                        </div>
+                        <div class="rect">
+                            <i class="bi bi-play-fill"></i>
+                            <p>Your videos</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/time-2623.svg"class='short' alt="time">
+                            <p>Watch Later`</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/thumbs-up-11229.svg" class='short'alt="thumbsup">
+                            <p>Liked videos</p>
+                        </div>
+                    </div>
+                    <div class="bmiddle">
+                        <p class="subsheading">Subscriptions</p>
+                        <div class="rect">
+                            <img src="images/gotham chess.png" class='subs' alt="goth">
+                            <p>GothamChess</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/rockz.jpg" class='subs' alt="forex">
+                            <p>RockzFX Academy</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/steven.jpg" class='subs' alt="forex">
+                            <p>Steven He</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/rayner.jpg"class='subs' alt="forex">
+                            <p>Rayner Teo</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/millionare'.jpg" class='subs'alt="forex">
+                            <p>Project Millionaire</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/add-button-12017.svg" class="short" alt="">
+                            <p>Browse channels</p>
+                        </div>
+                        <div class="bmiddle">
+                    </div>
+                        <p class="subsheading">Explore</p>
+                        <div class="rect">
+                            <i class="bi bi-fire rectpic"></i>
+                            <p>Trending</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/music-note-10180.svg" class='subs' alt="forex">
+                            <p>Music</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/8757632_youtube gaming_gaming_play_steaming_youtube_icon.png" class='subs' alt="forex">
+                            <p>Gaming</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/9054858_bx_news_icon.png" class='short'alt="">
+                            <p>News</p>
+                        </div> 
+                        <div class="rect">
+                            <i class="bi bi-trophy"></i>
+                            <p>Sports</p>
+                        </div>
+                    </div>
+                    <div class="bmiddle">
+                        <p class="subsheading">More from youtube</p>
+                        <div class="rect">
+                            <img src="images/youtube-logo-2431.svg"class='short' alt="logo">
+                            <p>YouTube Premium</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/icons8-youtube-studio-48.png" class='subs' alt="forex">
+                            <p>Creator Studio</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/icons8-youtube-music-48.png" class='subs' alt="forex">
+                            <p>YouTube Music</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/youtube kids.svg" class='short ytkids'alt="">
+                            <p>YouTube Kids</p>
+                        </div> 
+                        <div class="rect">
+                            <img src="images/youtube-tv-icon.svg"class='short' alt="">
+                            <p>YouTube TV</p>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <div class="rect">
+                            <i class="bi bi-gear"></i>
+                            <p>Settings</p>
+                        </div>
+                        <div class="rect">
+                            <i class="bi bi-flag"></i>
+                            <p>Report history</p>
+                        </div>
+                        <div class="rect">
+                            <i class="bi bi-question-circle"></i>
+                            <p>Help</p>
+                        </div>
+                        <div class="rect">
+                            <img src="images/warning-1090.svg" class='short'alt="">
+                            <p>Send feedback</p>
+                        </div> 
+                    </div>
+                    <div class="bottom">
+                        <div class="bsec">
+                            <a href="">About</a>&nbsp;
+                            <a href=''>Press</a>&nbsp;
+                            <a href=''>Copyright</a><br>
+                            <a href=''>Contact us</a>
+                            <a href=''>Creators</a>
+                            <a href="">Advertise</a>
+                            <a href="">Developers</a>
+                        </div>
+                        <div class="bsec">
+                            <a href="">Terms</a>&nbsp;
+                            <a href="">Privacy</a>&nbsp;
+                            <a href="">Policy & Safety</a><br>
+                            <a href="">How YouTube works</a><br>
+                            <a href="">Test new features</a>
+                        </div>
+                        <div class="bsec">
+                            <p>© 2022 Google LLC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="sidebarcont">
                 <div class="sidebar">
                     <div class="top">
-                        <div class="rect selected">
+                        <a href="index.html"><div class="rect selected">
                             <i class="bi bi-house-door-fill rectpic"></i>
                             <p>Home</p>
-                        </div>
+                        </div></a>
                         <div class="rect">
                             <img class= 'short'src="images/youtube-shorts-logo-15252.svg"/>
                             <p>Shorts</p>
@@ -231,10 +393,12 @@
                         </div>
                         <div class="secondcont">
                             <img src="images/youtube premium ad.jpeg" class='laptop'alt="laptop">
-                            <i class="bi bi-x-lg"></i>
+                            <div class="exit">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="videos">
+                    <a href="shazam.html"><div class="videos">
                         <div class="videocard">
                             <img src="images/shazam.webp" alt="">
                             <div class="info">
@@ -245,8 +409,8 @@
                                     <p>16M views . 4months ago</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="videocard">
+                        </div></a>
+                        <a href="magnus.html"><div class="videocard">
                             <img src="images/magnus.webp" alt="">
                             <div class="info">
                                 <img src="images/gotham chess.png" alt="bros">
@@ -256,8 +420,8 @@
                                     <p>347K views . 22hours ago</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="videocard">
+                        </div></a>
+                        <a href="rockzfx.html"><div class="videocard">
                             <img src="images/break.webp" alt="">
                             <div class="info">
                                 <img src="images/rockz.jpg" alt="bros">
@@ -267,8 +431,8 @@
                                     <p>1.3M views . 2 years ago</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="videocard">
+                        </div></a>
+                        <a href="pitch.html"><div class="videocard">
                             <img src="images/when you have perfect pitch.webp" alt="">
                             <div class="info">
                                 <img src="images/danielthrasher.jpg" alt="bros">
@@ -278,7 +442,7 @@
                                     <p>7.3M views . 2 years ago</p>
                                 </div>
                             </div>
-                        </div>
+                        </div></a>
                         <div class="videocard">
                             <img src="images/unity.webp" alt="">
                             <div class="info">
@@ -360,91 +524,92 @@
                        </div>
                    </div>
                    <div class="videos">
-                    <div class="videocard">
-                        <img src="images/chess memes.webp" alt="">
-                        <div class="info">
-                            <img src="images/chesspic.jpg" alt="bros">
-                            <div class="title">
-                                <p>Chess Memes #52 | When<br> You Checkmate With The...</p>
-                                <p>Top Chess<i title='verified'class="bi bi-check-circle-fill"></i></p>
-                                <p>92K views . 22 hours ago</p>
+                        <div class="videocard">
+                            <img src="images/chess memes.webp" alt="">
+                            <div class="info">
+                                <img src="images/chesspic.jpg" alt="bros">
+                                <div class="title">
+                                    <p>Chess Memes #52 | When<br> You Checkmate With The...</p>
+                                    <p>Top Chess<i title='verified'class="bi bi-check-circle-fill"></i></p>
+                                    <p>92K views . 22 hours ago</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="videocard">
-                        <img src="images/fast phones.webp" alt="">
-                        <div class="info">
-                            <img src="images/mrwho.jpg" alt="bros">
-                            <div class="title">
-                                <p>The 2 Fastest Phones on the Planet.</p>
-                                <p>Mrwhosetheboss <i title='verified'class="bi bi-check-circle-fill"></i></p>
-                                <p>10M views . 2 years ago</p>
+                        <div class="videocard">
+                            <img src="images/fast phones.webp" alt="">
+                            <div class="info">
+                                <img src="images/mrwho.jpg" alt="bros">
+                                <div class="title">
+                                    <p>The 2 Fastest Phones on the Planet.</p>
+                                    <p>Mrwhosetheboss <i title='verified'class="bi bi-check-circle-fill"></i></p>
+                                    <p>10M views . 2 years ago</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="videocard">
-                        <img src="images/naruto trailer.webp" alt="">
-                        <div class="info">
-                            <img src="images/jalex.jpg" alt="bros">
-                            <div class="title">
-                                <p>I Spent 150days creating a Naruto trailer - Part3</p>
-                                <p>Jalex Rosa <i title='verified'class="bi bi-check-circle-fill"></i></p>
-                                <p>1.2M views . 4 days ago</p>
+                        <div class="videocard">
+                            <img src="images/naruto trailer.webp" alt="">
+                            <div class="info">
+                                <img src="images/jalex.jpg" alt="bros">
+                                <div class="title">
+                                    <p>I Spent 150days creating a Naruto trailer - Part3</p>
+                                    <p>Jalex Rosa <i title='verified'class="bi bi-check-circle-fill"></i></p>
+                                    <p>1.2M views . 4 days ago</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="videocard">
-                        <img src="images/aang.webp" alt="">
-                        <div class="info">
-                            <img src="images/aangpic.jpg" alt="bros">
-                            <div class="title">
-                                <p>Every Time Aang Appears in Legend Of Korra |...</p>
-                                <p>Avatar: The Last Airbender<i title='verified'class="bi bi-check-circle-fill"></i></p>
-                                <p>412K views . 5 months ago</p>
+                        <div class="videocard">
+                            <img src="images/aang.webp" alt="">
+                            <div class="info">
+                                <img src="images/aangpic.jpg" alt="bros">
+                                <div class="title">
+                                    <p>Every Time Aang Appears in Legend Of Korra |...</p>
+                                    <p>Avatar: The Last Airbender<i title='verified'class="bi bi-check-circle-fill"></i></p>
+                                    <p>412K views . 5 months ago</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="videocard">
-                        <img src="images/rel just.webp" alt="">
-                        <div class="info">
-                            <img src="images/spepic.jpg" alt="bros">
-                            <div class="title">
-                                <p>Relative Justice S2 E63 |<br>Relative Justice October 2...</p>
-                                <p>SPE<i title='verified'class="bi bi-check-circle-fill"></i></p>
-                                <p>175K views . 1 month ago</p>
+                        <div class="videocard">
+                            <img src="images/rel just.webp" alt="">
+                            <div class="info">
+                                <img src="images/spepic.jpg" alt="bros">
+                                <div class="title">
+                                    <p>Relative Justice S2 E63 |<br>Relative Justice October 2...</p>
+                                    <p>SPE<i title='verified'class="bi bi-check-circle-fill"></i></p>
+                                    <p>175K views . 1 month ago</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="videocard">
-                        <img src="images/win in 8 moves.webp" alt="">
-                        <div class="info">
-                            <img src="images/gotham chess.png" alt="bros">
-                            <div class="title">
-                                <p>WIN IN 8 MOVES | The Fried<br>Liver Attack</p>
-                                <p>GothamChess<i title='verified'class="bi bi-check-circle-fill"></i></p>
-                                <p>3.3M views . 1 year ago</p>
+                        <div class="videocard">
+                            <img src="images/win in 8 moves.webp" alt="">
+                            <div class="info">
+                                <img src="images/gotham chess.png" alt="bros">
+                                <div class="title">
+                                    <p>WIN IN 8 MOVES | The Fried<br>Liver Attack</p>
+                                    <p>GothamChess<i title='verified'class="bi bi-check-circle-fill"></i></p>
+                                    <p>3.3M views . 1 year ago</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="videocard">
-                        <img src="images/GOW.webp" alt="">
-                        <div class="info">
-                            <img src="images/shirrako.jpg" alt="bros">
-                            <div class="title">
-                                <p>God Of War Ragnarok-<br> Kratos Vs. Garm Boss Figh...</p>
-                                <p>Shirrako <i title='verified'class="bi bi-check-circle-fill"></i></p>
-                                <p>1.5M views . 3 weeks ago</p>
+                        <div class="videocard">
+                            <img src="images/GOW.webp" alt="">
+                            <div class="info">
+                                <img src="images/shirrako.jpg" alt="bros">
+                                <div class="title">
+                                    <p>God Of War Ragnarok-<br> Kratos Vs. Garm Boss Figh...</p>
+                                    <p>Shirrako <i title='verified'class="bi bi-check-circle-fill"></i></p>
+                                    <p>1.5M views . 3 weeks ago</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="videocard">
-                        <img src="images/jung kook.webp" alt="">
-                        <div class="info">
-                            <img src="images/fifa.jpg" alt="bros">
-                            <div class="title">
-                                <p>Jung Kook from BTS<br> performs 'Dreamers' at FIF...</p>
-                                <p>FIFA<i title='verified'class="bi bi-check-circle-fill"></i></p>
-                                <p>31M views . 8 days ago</p>
+                        <div class="videocard">
+                            <img src="images/jung kook.webp" alt="">
+                            <div class="info">
+                                <img src="images/fifa.jpg" alt="bros">
+                                <div class="title">
+                                    <p>Jung Kook from BTS<br> performs 'Dreamers' at FIF...</p>
+                                    <p>FIFA<i title='verified'class="bi bi-check-circle-fill"></i></p>
+                                    <p>31M views . 8 days ago</p>
+                                </div>
                             </div>
                         </div>
                     </div>

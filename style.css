@@ -14,11 +14,11 @@ section{
     display: grid;
     grid-template-columns: auto 1fr 150px;
     position: sticky;
+    background-color: white;
     top: 0;
     max-width: 100vw;
     height: max-content;
     z-index: 1;
-    background-color:white;
     padding:10px 25px;
 }
 .icons{
@@ -48,8 +48,14 @@ section{
     font-size: 10px;
     position: relative;
 }
-.bi-list{
-    font-size: 20px;
+.bi-list1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 32px;
 }
 .searchbar{
     width: 65%;
@@ -148,7 +154,7 @@ section{
 .content{
     display: grid;
     max-width: 100vw;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: auto 1fr;
     max-height: 90vh;
 }
 .sidebarcont{
@@ -156,9 +162,11 @@ section{
     width: 240px;
     background-color: white;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
     overflow-y: hidden;
 }
-.sidebarcont:hover{
+.sidebarcont:hover,.sidebarcont1:hover{
     overflow-y: scroll;
 }
 ::-webkit-scrollbar{
@@ -240,6 +248,7 @@ section{
 }
 .maincont{
     max-height: 90vh;
+    position: relative;
     overflow-y: auto;
     width: 100%;
 }
@@ -255,7 +264,6 @@ section{
     top: 0;
     background-color: white;
     padding-bottom: 10px;
-    padding-right: 20px;
     padding-left: 10px;
 }
 .menu a{
@@ -276,7 +284,7 @@ section{
     transition: .5s;
 }
 .topcont{
-    width: 80vw;
+    width: 100%;
     height: fit-content;
     display: flex;
     padding: 30px;
@@ -310,10 +318,16 @@ section{
 }
 .secondcont{
     display: flex;
+    width: 45%;
 }
 .secondcont img{
     width: 100%;
     height:100%;
+}
+.exit{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .secondcont i{
     font-size: 23px;
@@ -424,6 +438,9 @@ section{
     display: flex;
     flex-direction: column;
 }
+.cont a{
+    text-decoration: none;
+}
 .shorts::-webkit-scrollbar-thumb{
     background: none;
 }
@@ -431,7 +448,9 @@ section{
     background: none;
 }
 .minisidebar{
-    display: none;
+    position: absolute;
+    width:90px;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -456,21 +475,248 @@ section{
     border-radius: 10px;
     padding: 0px 30px;
 }
+.mainvideo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    gap: 0px;
+}
+.dark{
+    overflow-y: auto;
+}
+.dim{
+    position: absolute;
+    width:100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 100;
+    display: none;
+    animation-name: opaque;
+    animation-duration: .5s;
+    background-color: rgba(0,0,0,0.5);
+}
+@keyframes opaque{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.leftvideo{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+    justify-content: flex-start;
+    width: 35%;
+}
+.dark .leftvideo .videocard{
+    display: flex;
+    width: 70%;
+    margin: 0;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.dark .videocard img{
+    border-radius: 10px;
+    width: 168px;
+    height: 100%;
+}
+.dark .title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.prodlogo{
+    height: 100%;
+    width: 100%;
+}
+.creator{
+    padding: 0px 30px;
+    gap: 15px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+iframe{
+    background-color: white;
+    width: 100%;
+}
+.topcreator{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.comm .title h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+.like1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.comments{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.comm{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.comm img{
+    width: 35px;
+    border-radius: 50%;
+}
+.comm .title{
+    gap: 5px;
+}
+.likes{
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    justify-content: flex-end;
+}
+.channel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.channel img{
+    height: 60px;
+    border-radius: 50%;
+}
+.channel .title{
+    gap: 5px;
+}
+.channel a{
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: black;
+    border-radius: 50px;
+    color: white !important;
+}
+.like:nth-child(1){
+    gap: 10px;
+}
+.like .bi{
+    font-size: 18px;
+}
+.like .bi-hand-thumbs-up{
+    border-right: 1px solid rgb(198,198,198);
+    padding-right: 10px;
+}
+.creator h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(15,15,15);
+}
+.channel .title h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+.like{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: rgb(229,229,229);
+}
+.like img{
+    width: 20px;
+}
+.top a,.dark a{
+    text-decoration: none;
+    color: rgb(15,15,15);
+}
+.sidebarcont1{
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 0;
+    transition: .2s;
+}
+.sidebarcont1 .icons{
+    padding: 10px 0px;
+}
+.list-two{
+    display: none;
+}
 @media only screen and (max-width:1300px){
-    .sidebarcont{
+    .list-two{
+        display: block;
+    }
+    .list-one{
         display: none;
+    }
+    .sidebarcont1{
+        max-height: 100vh;
+    }
+    .sidebarcont{
+        display: none !important;
     }
     .minisidebar{
         display: flex;
+        position: static;
+        padding-left: 0;
     }
     .content{
         grid-template-columns: 85px 1fr;
         overflow: hidden;
     }
+    .dark .leftvideo .videocard{
+        width: 100%;
+    }
 }
-@media screen and (max-width:768px){
+@media only screen and (max-width:1200px){
+.comments{
+    display: none;
+}
+.likes{
+    margin-top: 10px;
+}
+.creator{
+    width: 100%;
+    padding: 0;
+}
+.leftbar{
+    width: 100%;
+}
+.mainvideo{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+}
+@media only screen and (max-width:768px){
     .content{
         grid-template-columns: auto;
+    }
+    .likes{
+        width: 100%;
+        justify-content: flex-start;
     }
     .searchbar{
         border: none;
