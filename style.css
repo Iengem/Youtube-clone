@@ -648,7 +648,6 @@ iframe{
     left: 0;
     top: 0;
     bottom:0;
-    max-height: 90vh;
     background-color: white;
     display: flex;
     flex-direction: column;
