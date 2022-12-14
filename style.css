@@ -644,7 +644,7 @@ iframe{
 }
 .sidebarcont1{
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     max-height: 90vh;
