@@ -743,4 +743,9 @@ iframe{
     .topcont{
         display: none;
     }
+    @media only screen and (max-width:600px){
+        .list-two{
+            display: none;
+        }
+    }
 }
