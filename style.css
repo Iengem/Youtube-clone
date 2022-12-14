@@ -648,11 +648,11 @@ iframe{
     left: 0;
     top: 0;
     bottom:0;
+    max-height: 90vh;
     background-color: white;
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 0;
     transition: .2s;
 }
