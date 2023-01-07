@@ -794,4 +794,7 @@ iframe{
     .videocard img{
         border-radius: 0px;
     }
+    .info img{
+        border-radius: 50%;
+    }
 }
