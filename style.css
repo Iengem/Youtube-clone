@@ -560,6 +560,10 @@ iframe{
     height: 100%;
     width: 100%;
 }
+h2 span{
+    font-size: 14px;
+    padding-left: 20px;
+}
 .topcreator{
     width: 100%;
     flex-wrap: wrap;
@@ -715,6 +719,9 @@ iframe{
     align-items: center;
     flex-direction: column;
     gap: 20px;
+}
+.leftvideo{
+    width: 100%;
 }
 }
 @media only screen and (max-width:768px){
